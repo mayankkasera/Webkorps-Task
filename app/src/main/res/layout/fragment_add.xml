@@ -15,7 +15,7 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_Main"
-            android:src="@drawable/background"
+            android:src="@drawable/user_placeholder"
             android:layout_marginTop="@dimen/_30sdp"
             android:layout_width="@dimen/_80sdp"
             android:layout_height="@dimen/_80sdp"
@@ -25,6 +25,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_Main"
             android:background="@drawable/edit_round_12"
             app:layout_constraintRight_toRightOf="@+id/iv_Main"
             app:layout_constraintBottom_toBottomOf="@+id/iv_Main"
@@ -44,6 +45,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:textColorHint="@color/gray"
             android:hint="Enter Name"
             android:textColor="@color/colorPrimary"
@@ -57,6 +60,8 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:textColorHint="@color/gray"
             android:hint="Enter Email"
             android:id="@+id/et_Email"
@@ -72,6 +77,10 @@
             />
 
         <EditText
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:textColorHint="@color/gray"
             android:hint="Select Dob"
             android:id="@+id/et_Dob"

@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 if(tab.position==0)
                     return replace(ListFragment())
                 else
-                    return replace(AddFragment())
+                    return replace(AddFragment.newInstance("add"))
             }
             override fun onTabUnselected(tab: TabLayout.Tab) {
 
